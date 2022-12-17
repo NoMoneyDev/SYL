@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+
+
+/*Mobile screen*/
+@media screen and (max-width: 600px) {
+
+    .buttonbox {
+        border-radius: 50px;
+        border: 5px solid #000000;
+        padding: 1vw;
+        width: 75vw;
+        height: 25vw;
+        background-color: #F6F6E9;
+        transition-duration: 0.4s;
+    }
+    
+    .button-text{
+        position:relative ;
+        right:17%;
+        font-size: 6vw;
+        font-family: 'HK Grotesk', sans-serif;
+    }
+
+    #header {
+        font-size: 12vw;
+        text-align : center;
+        font-family: 'League Spartan', sans-serif;
+        color : #bde7b4;
+    }
+
+}
+
+
+/*PC screen*/
+@media screen and (min-width: 601px) {
+
+
+    .buttonbox {
+        border-radius: 50px;
+        border: 5px solid #000000;
+        padding: 20px;
+        width: 400px;
+        height: 140px;
+        background-color: #F6F6E9;
+        transition-duration: 0.4s;
+    }
+    
+    .buttonbox:hover {
+        padding: 20px;
+        width: 420px;
+        height: 160px;
+        
+    }
+    
+    .button-text {
+        position:relative ;
+        right:17%;
+        font-size: 270%;
+        font-family: 'HK Grotesk', sans-serif;
+    }
+
+    #header {
+        font-size: 60px;
+        text-align : center;
+        font-family: 'League Spartan', sans-serif;
+        color : #bde7b4;
+    }
+    
+}
+
+
+
+body {
+    background-color: #CBDDD1;
+}
+
+.neonText {
+    text-shadow:
+        0 0 7px #5cac91,
+        0 0 10px #5cac91,
+        0 0 21px #5cac91,
+        0 0 42px #000000,
+        0 0 82px #cbddd1,
+        0 0 92px #cbddd1,
+        0 0 102px #cbddd1,
+        0 0 151px #cbddd1;
+  }
+
+.buttonimg {
+    position: relative;
+    top:auto;
+    right:70%;
+}
+
+/*
+.button-text {
+    position:absolute;
+    top:28%;
+    text-align : left;
+    font-size: 35px;
+    font-family: 'HK Grotesk', sans-serif;
+}
+*/
+
+
+
+.button1{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.button2{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.button3{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.buttonimg{
+    position:absolute;
+    top:50%;
+    left:84%;
+    transform:translate(-50%,-50%);
+}
+
+.emergencyfont{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 180%;
+    text-align: left;
+}
+
+.hcenter{
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding:  10px;
+    min-width: 200px;
+    max-width: 500px;
+    width: 55vw;
+}
+
+.search-icon{
+    width: 15%;
+    margin-left: 5%;
+}
+
+#search{
+    min-width: 150px;
+    width: 45vw;
+}
+
+.FirstAidInfoNumber{
+    width: 8vw
+}
+
+.FirstAidInfoContent{
+    width: 50vw;
+}
+
+.RedClickHere{
+    width: 15vw;
+}
+
+#CommonDisease{
+    max-width: 500px;
+    width: 70vw;
+}
+
+#CommonDisease tr{
+    height: 5vh;
+}
+

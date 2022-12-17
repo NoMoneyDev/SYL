@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstAid</title>
+</head>
+
+
+
+<body class="emergencyfont">
+
+    <script>
+        
+        function onEnter(event){
+            if (event.keyCode == 13){
+                document.getElementById("searchBtn").click()
+                return true;
+            }
+            return false;
+        }
+
+        function checkLength(){
+            var searchValue = document.getElementById("search").value;
+
+            if (searchValue.length == 0){
+            alert("Enter a keyword");
+            return false;
+            }
+            searchDisease(searchValue)
+            return true;
+            }
+
+        function searchDisease(keyword){
+            window.open("http://www.google.com.pk/search?btnG=1&pws=0&q=" + keyword, '_blank');
+            return true;
+        }
+        
+    </script>
+
+    <header id="header" class="neonText">First Aid Information</header>
+    <br>
+    <div class="emergencyfont" style="margin: 20px ;">
+        <h1 style="font-size: 30px;">What accident happened?</h1>
+    </div>
+        
+    <br>
+    <div class="container">
+        <div class="searchbox" style="padding:5px ;">
+            <div class="container" id="searchline">
+                <span><img src="images/searchicon.png" id="searchBtn" width="25px" onclick="checkLength()" style="margin-top: 5px; margin-left: -10px; padding-right: 5px;"></span>
+                <input type="text" id="search" onkeypress="onEnter(event)" placeholder="Search for diseases" autocomplete="off" style="height:30px; padding:0px; border: none; outline: 0px;">
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div style="margin: 20px;">
+            Common Diseases
+    </div>
+
+    <div class="container">
+        <table id="CommonDisease">
+            <tr>
+                <td class="FirstAidInfoNumber">1.</td>
+                <td class="FirstAidInfoContent">Common Flu</td>
+                <td class="RedClickHere"><div class="container"><a href="https://www.vibhavadi.com/Health-expert/detail/448" target="_blank"><img src="images/redclickhere.png" style="width:130px"></a></div></td>
+            </tr>
+            
+            <tr>
+                <td class="FirstAidInfoNumber">2.</td>
+                <td class="FirstAidInfoContent">Allergy</td>
+                <td class="RedClickHere"><div class="container"><a href="https://www.samitivejhospitals.com/th/article/detail/โรคภูมิแพ้คืออะไร" target="_blank"><img src="images/redclickhere.png" style="width:130px"></a></div></td>
+            </tr>
+
+            <tr>
+                <td class="FirstAidInfoNumber">3.</td>
+                <td class="FirstAidInfoContent">Diarrhea</td>
+                <td class="RedClickHere"><div class="container"><a href="https://www.phyathai.com/article_detail/3125/th/แยกให้ออก!_ขับถ่ายแบบไหนเรียก_“ท้องเสีย”_ก่อนนำไปสู่ภาวะช็อค" target="_blank"><img src="images/redclickhere.png" style="width:130px"></a></div></td>
+            </tr>
+
+            <tr>
+                <td class="FirstAidInfoNumber">4.</td>
+                <td class="FirstAidInfoContent">Headache</td>
+                <td class="RedClickHere"><div class="container"><a href="https://www.sikarin.com/health/ปวดหัวอย่านิ่งนอนใจ-ปวด" target="_blank"><img src="images/redclickhere.png" style="width:130px"></a></div></td>
+            </tr>
+
+            <tr>
+                <td class="FirstAidInfoNumber">5.</td>
+                <td class="FirstAidInfoContent">Stomach Ache</td>
+                <td class="RedClickHere"><div class="container"><a href="https://www.khonkaenram.com/th/services/health-information/health-articles/surg/stomachache" target="_blank"><img src="images/redclickhere.png" style="width:130px"></a></div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
